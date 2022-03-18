@@ -12,7 +12,7 @@ namespace traderTrades
 		public const string APIGUID = "cyantist.inscryption.api";
 		public const string PluginGuid = "extraVoid.inscryption.traderTrades";
 		private const string PluginName = "Trader's Menagerie of Tokensk";
-		private const string PluginVersion = "1.0.0";
+		private const string PluginVersion = "2.0.0";
 
 		public static string Directory;
 		internal static ManualLogSource Log;
@@ -21,7 +21,7 @@ namespace traderTrades
 		{
 
 			Log = base.Logger;
-			Directory = this.Info.Location.Replace("boneSigils.dll", "");
+			Directory = this.Info.Location.Replace("traderTrades.dll", "");
 
 			Harmony harmony = new(PluginGuid);
 			harmony.PatchAll();
